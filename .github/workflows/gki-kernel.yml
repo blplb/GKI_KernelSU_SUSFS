@@ -612,7 +612,7 @@ jobs:
 
           # 核心 OverlayFS 模块
           # 必须启用 Overlay 文件系统
-          echo "CONFIG_OVERLAY_FS=y" >> "$CONFIG_FILE"
+          #echo "CONFIG_OVERLAY_FS=y" >> "$CONFIG_FILE"
 
           # VFS 依赖：防止 'Invalid argument' 错误的常见依赖
           # 确保内核支持 Dnotify（通常 GKI 默认开启，但为保险起见）
