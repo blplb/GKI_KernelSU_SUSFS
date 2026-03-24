@@ -29,22 +29,22 @@ on:
           - "6.1"
           - "6.6"
           - "6.12"
-        default: "5.10"
+        default: "6.6"
       sub_level:
         description: "子版本号 (如 66, 198, X)"
         required: true
         type: string
-        default: "66"
+        default: "77"
       os_patch_level:
         description: "安全补丁级别 (如 2022-01, lts)"
         required: true
         type: string
-        default: "2022-01"
+        default: "2025-03"
       revision:
         description: "修订版本 (如 r11, 仅 5.10 需要)"
         required: false
         type: string
-        default: "r11"
+        default: ""
 
       # ==================== KernelSU 配置 ====================
       kernelsu_variant:
