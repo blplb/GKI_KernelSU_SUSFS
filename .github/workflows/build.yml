@@ -728,7 +728,7 @@ jobs:
           CONFIG_ZRAM=y
           CONFIG_MODULE_SIG=n
           CONFIG_CRYPTO_LZO=y
-          CONFIG_ZRAM_DEF_COMP_LZ4KD=y
+          CONFIG_ZRAM_DEF_COMP_LZ4=y
           EOF
           fi
 
