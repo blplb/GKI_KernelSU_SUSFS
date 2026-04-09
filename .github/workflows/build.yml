@@ -778,12 +778,12 @@ jobs:
 
           if [ "${{ inputs.kernel_version }}" = "5.10" ]; then
             cat >> "$CONFIG_FILE" <<'EOF'
-          CONFIG_ZSMALLOC=y
-          CONFIG_ZRAM=y
-          CONFIG_MODULE_SIG=n
-          CONFIG_CRYPTO_LZO=y
-          CONFIG_ZRAM_DEF_COMP_LZ4KD=y
-          EOF
+            CONFIG_ZSMALLOC=y
+            CONFIG_ZRAM=y
+            CONFIG_MODULE_SIG=n
+            CONFIG_CRYPTO_LZO=y
+            CONFIG_ZRAM_DEF_COMP_LZ4KD=y
+            EOF
           fi
 
           if [ "${{ inputs.kernel_version }}" != "6.6" ] && [ "${{ inputs.kernel_version }}" != "5.10" ]; then
